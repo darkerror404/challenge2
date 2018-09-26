@@ -1,0 +1,136 @@
+<body oncontextmenu="return false;">
+<html>
+<head>
+<title>Challenge Complete</title>
+<BODY>
+    <center><font size="150px" color="red">Congraculation</font></center>
+
+<!-- Le styles -->
+
+ <link rel="SHORTCUT ICON" href="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/33403359_1599078823534680_3544044319298027520_n.png?_nc_cat=0&oh=2fffa4553242a664a1ae02e3a4fe93f1&oe=5BEB86D0" />
+ <style type="text/css">
+     *{
+        background-color: black;
+     }
+     div{
+  display:inline-block;
+  position:relative;
+}
+
+button{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+
+textarea{
+  display:block;
+}
+.yes {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+    box-shadow:inset 0px 1px 0px 0px #f5978e;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24537;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 19px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+}
+.yes:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537',GradientType=0);
+    background-color:#c62d1f;
+}
+.yes:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
+ </style>
+
+
+
+</head><center>
+<p align="center">
+<form><textarea style="background-color:#000000;color:#32CD32;" name="about" readonly="readonly" rows="10" cols="60"
+wrap="soft"></textarea></form></p>
+</div>
+<body onLoad="type_text()" ; bgColor=#000000 text=#00FFFF>
+<div style="width: 600px;height: 100px;" align="center">
+<script language="Javascript">
+var tl=new Array(
+"You Have Successfully Complete Challenge2",
+"Hope it was a amazing experiance for you",
+"Game Just Begain.",
+"Toogether We Will Hit Harder",
+"We Want To Announce Your Name With FB Profile as Winner",
+"are you agree?",
+
+);
+var speed=60;
+var index=0; text_pos=0;
+var str_length=tl[0].length;
+var contents, row;
+function type_text()
+{
+contents='';
+row=Math.max(0,index-20);
+while(row<index)
+contents += tl[row++] + '\r\n';
+document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "";
+if(text_pos++==str_length)
+{
+text_pos=0;
+index++;
+if(index!=tl.length)
+{
+str_length=tl[index].length;
+setTimeout("type_text()",1500);
+}
+} else
+setTimeout("type_text()",speed);
+}
+//-->
+</script>
+<a href="yes.html" class="yes">YES</a> <a href="no.html" class="yes">NO</a>
+<br />
+<br>
+<br>
+<br>
+<br>
+<br>
+    <center>
+        <marquee>
+        <font size="500" color="red">DARK ERROR</font>
+    </marquee>
+    </center>
+</body>
+
+
+ </html>
+
+
